@@ -1366,15 +1366,13 @@ button.swiper-pagination-bullet {
 }
 
 .btn.btn-secondary {
-  color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+  background-color: #ffffff;
 }
 
 .btn.btn-secondary:hover {
   color: #fff;
-  background-color: #5a6268;
-  border-color: #545b62;
+  background: -o-linear-gradient(359.94deg, #6F2C91 0%, #B41E8E 100%);
+  background: linear-gradient(90.06deg, #6F2C91 0%, #B41E8E 100%);
 }
 
 .btn.btn-success {
@@ -2669,14 +2667,13 @@ a:hover {
   background-image: url("../img/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .franchise23-hero__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2684,20 +2681,21 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   padding: 49px 0;
+  gap: 20px;
 }
 
 .franchise23-hero__form {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 356px;
-          flex: 1 0 356px;
+      -ms-flex: 1 0 30%;
+          flex: 1 0 30%;
   max-width: 356px;
 }
 
 .franchise23-hero__content {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 640px;
-          flex: 1 0 640px;
-  max-width: 640px;
+      -ms-flex: 1 0 calc(60% - 20px);
+          flex: 1 0 calc(60% - 20px);
+  max-width: calc(60% - 20px);
 }
 
 .franchise23-hero__title {
@@ -2747,6 +2745,168 @@ a:hover {
   padding: 15px 16px;
 }
 
+.franchise23-today {
+  padding: 58px 0 68px;
+  position: relative;
+}
+
+.franchise23-today__text {
+  margin-bottom: 50px;
+  max-width: 640px;
+}
+
+.franchise23-today__text p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #252525;
+  margin: 0 0 30px;
+}
+
+.franchise23-today__text p:last-of-type {
+  margin-bottom: 0;
+}
+
+.franchise23-today__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  background: -o-linear-gradient(347.28deg, #FF7B01 8.98%, #B41E8E 50.66%, #6F2C91 95.96%);
+  background: linear-gradient(102.72deg, #FF7B01 8.98%, #B41E8E 50.66%, #6F2C91 95.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin: 0 0 50px;
+  position: relative;
+}
+
+.franchise23-today__title:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -32px;
+  background-image: url("../img/icons-sprite.svg#star-yellow");
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 28px;
+}
+
+.franchise23-today__num {
+  max-width: 860px;
+}
+
+.franchise23-today__download {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: -o-linear-gradient(316.62deg, rgba(180, 30, 142, 0.2) 21.93%, rgba(253, 185, 19, 0.2) 119.13%);
+  background: linear-gradient(133.38deg, rgba(180, 30, 142, 0.2) 21.93%, rgba(253, 185, 19, 0.2) 119.13%);
+  width: 742px;
+  height: 100%;
+  padding: 100px;
+  overflow: hidden;
+}
+
+.franchise23-today__download:before {
+  content: "";
+  position: absolute;
+  left: -70%;
+  top: 50%;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #ffffff;
+  width: 200%;
+  height: 500px;
+}
+
+.franchise23-today .btn-secondary {
+  position: relative;
+  max-width: 262px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 19px 30px;
+  border-radius: 10px;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.franchise23-today .btn-secondary:hover span {
+  background: transparent;
+  -webkit-text-fill-color: #fff;
+  text-fill-color: #fff;
+}
+
+.franchise23-today .btn-secondary:hover svg path {
+  fill: #ffffff;
+}
+
+.franchise23-today .btn-secondary span {
+  background: -o-linear-gradient(359.94deg, #6F2C91 0%, #B41E8E 100%);
+  background: linear-gradient(90.06deg, #6F2C91 0%, #B41E8E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.franchise23-today .btn-secondary svg {
+  margin-right: 24px;
+}
+
+.num-count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+
+.num-count__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(33.33% - 20px);
+          flex: 1 0 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+}
+
+.num-count__top {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 68px;
+  background: -o-linear-gradient(359.94deg, #6F2C91 0%, #B41E8E 100%);
+  background: linear-gradient(90.06deg, #6F2C91 0%, #B41E8E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin: 0 0 4px;
+}
+
+.num-count__bottom {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #252525;
+}
+
 @media only screen and (max-width: 1023px) {
   .header__body {
     -webkit-box-pack: center;
@@ -2768,6 +2928,12 @@ a:hover {
         -ms-flex: 1 0 70%;
             flex: 1 0 70%;
     max-width: 445px;
+  }
+
+  .franchise23-hero__title {
+    font-size: 28px;
+    line-height: 36px;
+    margin: 0 0 46px;
   }
 }
 
@@ -2848,5 +3014,155 @@ a:hover {
     background: -o-linear-gradient(92.66deg, rgba(111, 44, 145, 0) -0.41%, #C43D8F 84.01%);
     background: linear-gradient(357.34deg, rgba(111, 44, 145, 0) -0.41%, #C43D8F 84.01%);
     margin: 0 -10px;
+  }
+
+  .franchise23-hero {
+    background-position: left;
+  }
+
+  .franchise23-hero__body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .franchise23-hero__form {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .franchise23-hero__content {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    max-width: 100%;
+  }
+
+  .franchise23-hero__title {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 0 22px;
+  }
+
+  .franchise23-hero__list {
+    max-width: 356px;
+    margin: 0 auto;
+  }
+
+  .franchise23-hero__list li {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 18px;
+    position: relative;
+    padding-left: 32px;
+  }
+
+  .franchise23-hero__list li:nth-child(2) {
+    margin-left: 0;
+  }
+
+  .franchise23-hero__list li:nth-child(3) {
+    margin-left: 0;
+  }
+
+  .franchise23-hero__list li .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .franchise23-hero__footer {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 53px 0 34px;
+  }
+
+  .franchise23-today {
+    padding: 23px 0 40px;
+  }
+
+  .franchise23-today__text {
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+
+  .franchise23-today__text p {
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0 0 20px;
+  }
+
+  .franchise23-today__text p:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .franchise23-today__download {
+    position: relative;
+    width: calc(100% + 20px);
+    padding: 40px 0;
+    margin: 0 -10px 45px;
+  }
+
+  .franchise23-today__download:before {
+    display: none;
+  }
+
+  .franchise23-today__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  .franchise23-today__title:before {
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+
+  .franchise23-today .btn-secondary {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .num-count {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .num-count__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 calc(50% - 20px);
+            flex: 1 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+
+  .num-count__top {
+    font-size: 32px;
+    line-height: 39px;
+    margin: 0 0 4px;
+  }
+
+  .num-count__bottom {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
   }
 }

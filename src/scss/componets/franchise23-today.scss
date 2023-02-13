@@ -1,0 +1,147 @@
+.franchise23-today{
+  padding: 58px 0 68px;
+  position: relative;
+
+  &__body{
+
+  }
+  &__text{
+    margin-bottom: 50px;
+    max-width: 640px;
+    p{
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #252525;
+      margin: 0 0 30px;
+      &:last-of-type{
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    background: linear-gradient(102.72deg, #FF7B01 8.98%, #B41E8E 50.66%, #6F2C91 95.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin: 0 0 50px;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: -32px;
+      background-image: url("../img/icons-sprite.svg#star-yellow");
+      background-repeat: no-repeat;
+      width: 22px;
+      height: 28px;
+    }
+  }
+  &__num{
+    max-width: 860px;
+  }
+  &__download{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(133.38deg, rgba(#B41E8E,.2) 21.93%, rgba(#FDB913,.2) 119.13%);
+    width: 742px;
+    height: 100%;
+    padding: 100px;
+    overflow: hidden;
+    &:before{
+      content: '';
+      position: absolute;
+      left: -70%;
+      top: 50%;
+      transform: rotate(45deg);
+      background-color: #ffffff;
+      width: 200%;
+      height: 500px;
+    }
+  }
+  .btn-secondary{
+    position: relative;
+    max-width: 262px;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    padding: 19px 30px;
+    border-radius: 10px;
+    margin-right: 0;
+    margin-left: auto;
+    &:hover{
+      span{
+        background: transparent;
+        -webkit-text-fill-color: #fff;
+        text-fill-color: #fff;
+      }
+      svg{
+        path{
+          fill: #ffffff;
+        }
+      }
+    }
+    span{
+      background: linear-gradient(90.06deg, #6F2C91 0%, #B41E8E 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+    svg{
+      margin-right: 24px;
+    }
+  }
+  @include r(1023){}
+  @include r(767){
+    padding: 23px 0 40px;
+    &__text{
+      margin-bottom: 30px;
+      max-width: 100%;
+      p{
+        font-size: 16px;
+        line-height: 19px;
+        margin: 0 0 20px;
+        &:last-of-type{
+          margin-bottom: 0;
+        }
+      }
+    }
+    &__download{
+      position: relative;
+      width: calc(100% + 20px);
+      padding: 40px 0;
+      margin: 0 -10px 45px;
+      &:before{
+       display: none;
+      }
+    }
+    &__title{
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 20px;
+      text-align: center;
+      padding-top: 40px;
+      &:before {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+    }
+    .btn-secondary{
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}

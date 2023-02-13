@@ -33,13 +33,10 @@
 		}
 	}
 	&.btn-secondary{
-		color: #fff;
-		background-color: #6c757d;
-		border-color: #6c757d;
+		background-color: #ffffff;
 		&:hover {
 			color: #fff;
-			background-color: #5a6268;
-			border-color: #545b62;
+			background: linear-gradient(90.06deg, #6F2C91 0%, #B41E8E 100%);
 		}
 	}
 	&.btn-success{

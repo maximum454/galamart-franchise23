@@ -2,20 +2,21 @@
   background-image: url("../img/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   &__body{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 49px 0;
+    gap: 20px;
   }
   &__form{
-    flex: 1 0 356px;
+    flex: 1 0 30%;
     max-width: 356px;
   }
   &__content{
-    flex: 1 0 640px;
-    max-width: 640px;
+    flex: 1 0 calc(60% - 20px);
+    max-width: calc(60% - 20px);
   }
   &__title{
     font-family: 'Inter';
@@ -57,5 +58,64 @@
     text-align: center;
     text-transform: uppercase;
     padding: 15px 16px;
+  }
+  @include r(1023){
+    &__title{
+      font-size: 28px;
+      line-height: 36px;
+      margin: 0 0 46px;
+    }
+  }
+  @include r(767){
+    background-position: left;
+    &__body{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__form{
+      flex: 1 0 100%;
+      order: 2;
+    }
+    &__content{
+      order: 1;
+      flex: 1 0 100%;
+      max-width: 100%;
+    }
+    &__title{
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      margin: 0 0 22px;
+    }
+    &__list{
+      max-width: 356px;
+      margin: 0 auto;
+      li{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 18px;
+        position: relative;
+        padding-left: 32px;
+        &:nth-child(2){
+          margin-left: 0;
+        }
+        &:nth-child(3){
+          margin-left: 0;
+        }
+        .icon{
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
+
+    }
+    &__footer{
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      padding: 53px 0 34px;
+    }
   }
 }
