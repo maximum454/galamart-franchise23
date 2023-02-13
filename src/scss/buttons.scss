@@ -3,32 +3,33 @@
 	text-align: center;
 	white-space: nowrap;
 	vertical-align: middle;
-	font-weight: 400;
-	font-size: 13px;
-	line-height: 13px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 14px;
+	line-height: 17px;
 	user-select: none;
 	border: 1px solid transparent;
-	padding: 20px 30px;
-	border-radius: 0;
+	padding: 15px 28px;
+	border-radius: 50px;
 	cursor: pointer;
 	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 	text-decoration: none;
+	text-transform: uppercase;
 	&:focus,
 	&:hover {
 		text-decoration: none;
 	}
 	&.disabled{
-		opacity: .65;
+		background: #D09EE9;
 		pointer-events: none;
 	}
 	&.btn-primary{
 		color: #fff;
-		background-color: #192864;
-		border-color: #192864;
+		background: linear-gradient(93.54deg, #FD7F2B 0%, #FDB913 100%);
 		&:hover {
 			color: #fff;
-			background-color: #0069d9;
-			border-color: #0062cc;
+			background: linear-gradient(93.54deg, #FDB913 0%, #FDB913 100%);
 		}
 	}
 	&.btn-secondary{

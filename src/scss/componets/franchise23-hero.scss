@@ -1,0 +1,61 @@
+.franchise23-hero{
+  background-image: url("../img/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 49px 0;
+  }
+  &__form{
+    flex: 1 0 356px;
+    max-width: 356px;
+  }
+  &__content{
+    flex: 1 0 640px;
+    max-width: 640px;
+  }
+  &__title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+    margin: 0 0 46px;
+  }
+  &__list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li{
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 19px;
+      color: #FFFFFF;
+      margin-bottom: 18px;
+      &:nth-child(2){
+        margin-left: 20px;
+      }
+      &:nth-child(3){
+        margin-left: 40px;
+      }
+    }
+
+  }
+  &__footer{
+    background: linear-gradient(90.06deg, #6F2C91 0%, #B41E8E 100%);
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px 16px;
+  }
+}

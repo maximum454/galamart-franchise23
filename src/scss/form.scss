@@ -34,12 +34,15 @@
     align-self: center;
 }
 .form-label {
-    display: inline-block;
-    margin-bottom: 6px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    color: #000000;
+    display: block;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
 }
 .form-group .form-title {
     display: block;
@@ -53,22 +56,24 @@
 .form-control {
     display: block;
     width: 100%;
-    padding: 10px 15px 11px;
+    padding: 6px 10px;
+    font-family: 'PT Sans';
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 16px;
-    color: #495057;
+    line-height: 18px;
+    color: #252525;
     background-color: #fff;
     background-clip: padding-box;
-    border: 0.5px solid #000000;
-    border-radius: 0;
+    border: none;
+    border-radius: 2px;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     &:focus{
         outline: none;
         border-color: #000;
     }
     &:placeholder {
-        color: #B9B9B9;
+        color: #C8B5D1;
     }
 
 }
