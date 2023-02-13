@@ -6,6 +6,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
+  &__contact{
+    flex: 1 0 30%;
+    max-width: 315px;
+  }
   &__title{
     font-family: 'Inter';
     font-weight: 700;
@@ -61,7 +65,40 @@
     }
   }
   &__form{
-    flex: 1 0 540px;
+    flex: 1 0 70%;
     max-width: 540px;
+  }
+  @include r(1023){
+    &__form{
+      flex: 1 0 70%;
+      max-width: 445px;
+    }
+  }
+  @include r(767){
+    &__body{
+      justify-content: center;
+    }
+    &__contact{
+      padding-bottom: 89px;
+    }
+    &__title{
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      padding-top: 38px;
+      margin: 0 0 55px;
+      &:before{
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,0);
+        width: 22px;
+        height: 28px;
+      }
+    }
+    &__form{
+      flex: 1 0 100%;
+      background: linear-gradient(357.34deg, rgba(111, 44, 145, 0) -0.41%, #C43D8F 84.01%);
+      margin: 0 -10px;
+    }
   }
 }
