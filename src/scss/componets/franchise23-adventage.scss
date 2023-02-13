@@ -1,0 +1,83 @@
+.franchise23-adventage{
+  background: linear-gradient(90.06deg, #6F2C91 0%, #B41E8E 100%);
+  padding: 70px 0 90px;
+  &__title{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+    margin: 0 0 80px;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: -32px;
+      background-image: url("../img/icons-sprite.svg#star-white");
+      background-repeat: no-repeat;
+      width: 22px;
+      height: 28px;
+    }
+  }
+  &__body{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  &__item{
+    flex: 1 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  &__figure{
+    flex-shrink: 0;
+    margin: 0;
+  }
+  &__name{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+  }
+
+  @include r(767){
+    padding: 55px 0 77px;
+    &__title{
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      padding-top: 38px;
+      margin: 0 0 40px;
+      &:before{
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,0);
+        width: 22px;
+        height: 28px;
+      }
+    }
+    &__body{
+      flex-direction: column;
+    }
+    &__item{
+      flex: 1 0 100%;
+      max-width: 100%;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    &__figure{
+      max-width: 50px;
+    }
+    &__name{
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}
