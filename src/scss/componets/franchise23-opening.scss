@@ -28,6 +28,7 @@
   &__item{
     flex: 1 0 calc(20% - 20px);
     max-width: calc(20% - 20px);
+
   }
   &__name{
     font-family: 'Inter';
@@ -44,6 +45,10 @@
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
+  }
+  &__footer{
+    margin-top: 45px;
+    display: flex;
   }
   @include r(767){
     &__title{
@@ -63,9 +68,27 @@
     &__item{
       flex: 1 0 100%;
       max-width: 100%;
+      text-align: center;
     }
     &__name{
       margin: 0 0 9px;
+      padding-top: 45px;
+      position: relative;
+      &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,0);
+        background-image: url("../img/icons-sprite.svg#arrow-label");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 39px;
+        height: 45px;
+      }
+    }
+    &__footer{
+      display: none;
     }
   }
 }

@@ -2049,6 +2049,12 @@ button.swiper-pagination-bullet {
   height: 28px;
 }
 
+.icon-arrow-label {
+  background-image: url("../img/icons-sprite.svg#arrow-label");
+  width: 39px;
+  height: 33px;
+}
+
 .table {
   width: 100%;
   margin-bottom: 40px;
@@ -3345,6 +3351,13 @@ a:hover {
   color: #FFFFFF;
 }
 
+.franchise23-opening__footer {
+  margin-top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media only screen and (max-width: 1023px) {
   .header__body {
     -webkit-box-pack: center;
@@ -3808,9 +3821,31 @@ a:hover {
         -ms-flex: 1 0 100%;
             flex: 1 0 100%;
     max-width: 100%;
+    text-align: center;
   }
 
   .franchise23-opening__name {
     margin: 0 0 9px;
+    padding-top: 45px;
+    position: relative;
+  }
+
+  .franchise23-opening__name:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    background-image: url("../img/icons-sprite.svg#arrow-label");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 39px;
+    height: 45px;
+  }
+
+  .franchise23-opening__footer {
+    display: none;
   }
 }
