@@ -1,0 +1,111 @@
+.franchise23-requirement-list{
+  position: relative;
+  &:before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 36px;
+    background: linear-gradient(90.06deg, #6F2C91 0%, #B41E8E 100%);
+    width: 5px;
+    height: calc(100% + 50px);
+  }
+  &__item{
+    display: flex;
+    padding-bottom: 40px;
+    &:last-of-type{
+      padding-bottom: 0;
+    }
+  }
+  &__num{
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    background: linear-gradient(90.06deg, #6F2C91 0%, #B41E8E 100%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 18px;
+    flex-shrink: 0;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background-color: #fff;
+      width: calc(100% - 10px);
+      height: calc(100% - 10px);
+      z-index: 0;
+      overflow: hidden;
+      border-radius: 50%;
+    }
+    span{
+      font-family: 'Inter';
+      font-weight: 900;
+      font-size: 36px;
+      line-height: 44px;
+      text-align: center;
+      text-transform: uppercase;
+      background: linear-gradient(102.72deg, #FF7B01 8.98%, #B41E8E 50.66%, #6F2C91 95.96%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      position: relative;
+    }
+  }
+  &__content{
+    padding-top: 26px;
+  }
+  &__title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #252525;
+  }
+  &__dropdown{
+    margin-top: 47px;
+    column-count: 2;
+  }
+  &__name{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #252525;
+    padding-left: 46px;
+    position: relative;
+    margin-bottom: 10px;
+    .icon{
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  &__ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li{
+      position: relative;
+      padding-left: 46px;
+      font-family: 'Inter';
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #252525;
+      &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 11px;
+        background: linear-gradient(93.54deg, #FD7F2B 0%, #FDB913 100%);
+        width: 20px;
+        height: 2px;
+      }
+    }
+  }
+}
