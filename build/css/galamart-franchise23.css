@@ -3225,6 +3225,19 @@ a:hover {
           column-count: 2;
 }
 
+.franchise23-requirement-list__dropdown-item {
+  page-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+     -moz-column-break-inside: avoid;
+          break-inside: avoid;
+  margin-bottom: 50px;
+  max-width: 450px;
+}
+
+.franchise23-requirement-list__dropdown-item:last-of-type {
+  margin-bottom: 0;
+}
+
 .franchise23-requirement-list__name {
   font-family: "Inter";
   font-weight: 400;
@@ -3232,6 +3245,8 @@ a:hover {
   line-height: 24px;
   color: #252525;
   padding-left: 46px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   position: relative;
   margin-bottom: 10px;
 }
@@ -3635,10 +3650,6 @@ a:hover {
     line-height: 17px;
   }
 
-  .franchise23-requirement {
-    padding: 55px 0 77px;
-  }
-
   .franchise23-requirement__title {
     font-size: 24px;
     line-height: 29px;
@@ -3655,5 +3666,61 @@ a:hover {
             transform: translate(-50%, 0);
     width: 22px;
     height: 28px;
+  }
+
+  .franchise23-requirement__bottom {
+    padding: 30px 0 60px;
+  }
+
+  .franchise23-requirement-list:before {
+    top: 0;
+    left: 22px;
+    height: 100%;
+  }
+
+  .franchise23-requirement-list__num {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  .franchise23-requirement-list__num span {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .franchise23-requirement-list__content {
+    padding-top: 8px;
+  }
+
+  .franchise23-requirement-list__title {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .franchise23-requirement-list__dropdown {
+    margin-top: 47px;
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1;
+  }
+
+  .franchise23-requirement-list__dropdown-item {
+    margin-bottom: 44px;
+  }
+
+  .franchise23-requirement-list__name {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .franchise23-requirement-list__ul li {
+    padding-left: 46px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .franchise23-requirement-list__ul li:before {
+    top: 9px;
   }
 }
