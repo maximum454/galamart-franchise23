@@ -1,0 +1,71 @@
+.franchise23-opening{
+  background: linear-gradient(90.06deg, #6F2C91 0%, #B41E8E 100%);
+  padding: 60px 0 64px;
+  &__title{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+    margin: 0 0 60px;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: -32px;
+      background-image: url("../img/icons-sprite.svg#star-white");
+      background-repeat: no-repeat;
+      width: 22px;
+      height: 28px;
+    }
+  }
+  &__body{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  &__item{
+    flex: 1 0 calc(20% - 20px);
+    max-width: calc(20% - 20px);
+  }
+  &__name{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FDB913;
+    margin: 0 0 19px;
+  }
+  &__anons{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+  }
+  @include r(767){
+    &__title{
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      padding-top: 38px;
+      margin: 0 0 55px;
+      &:before{
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,0);
+        width: 22px;
+        height: 28px;
+      }
+    }
+    &__item{
+      flex: 1 0 100%;
+      max-width: 100%;
+    }
+    &__name{
+      margin: 0 0 9px;
+    }
+  }
+}

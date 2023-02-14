@@ -3284,6 +3284,67 @@ a:hover {
   height: 2px;
 }
 
+.franchise23-opening {
+  background: -o-linear-gradient(359.94deg, #6F2C91 0%, #B41E8E 100%);
+  background: linear-gradient(90.06deg, #6F2C91 0%, #B41E8E 100%);
+  padding: 60px 0 64px;
+}
+
+.franchise23-opening__title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #FFFFFF;
+  margin: 0 0 60px;
+  position: relative;
+}
+
+.franchise23-opening__title:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -32px;
+  background-image: url("../img/icons-sprite.svg#star-white");
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 28px;
+}
+
+.franchise23-opening__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+
+.franchise23-opening__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(20% - 20px);
+          flex: 1 0 calc(20% - 20px);
+  max-width: calc(20% - 20px);
+}
+
+.franchise23-opening__name {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #FDB913;
+  margin: 0 0 19px;
+}
+
+.franchise23-opening__anons {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
 @media only screen and (max-width: 1023px) {
   .header__body {
     -webkit-box-pack: center;
@@ -3722,5 +3783,34 @@ a:hover {
 
   .franchise23-requirement-list__ul li:before {
     top: 9px;
+  }
+
+  .franchise23-opening__title {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    padding-top: 38px;
+    margin: 0 0 55px;
+  }
+
+  .franchise23-opening__title:before {
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    width: 22px;
+    height: 28px;
+  }
+
+  .franchise23-opening__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    max-width: 100%;
+  }
+
+  .franchise23-opening__name {
+    margin: 0 0 9px;
   }
 }
