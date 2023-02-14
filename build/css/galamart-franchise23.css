@@ -3358,6 +3358,24 @@ a:hover {
   display: flex;
 }
 
+.franchise23-video__name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #252525;
+}
+
+.franchise23-video__date {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #B41E8E;
+}
+
 @media only screen and (max-width: 1023px) {
   .header__body {
     -webkit-box-pack: center;
@@ -3847,5 +3865,15 @@ a:hover {
 
   .franchise23-opening__footer {
     display: none;
+  }
+
+  .franchise23-video__name {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .franchise23-video__date {
+    font-size: 14px;
+    line-height: 17px;
   }
 }
