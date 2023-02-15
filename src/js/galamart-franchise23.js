@@ -17,6 +17,20 @@ const swiperVideoThumb = new Swiper('.swiper-video-thumb', {
     spaceBetween: 20,
     freeMode: true,
     watchSlidesProgress: true,
+    breakpoints: {
+        320: {
+            slidesPerView: 2,
+        },
+        425: {
+            slidesPerView: 2.5,
+        },
+        768: {
+            slidesPerView: 3,
+        },
+        1024: {
+            slidesPerView: 4,
+        }
+    }
 })
 
 const swiperVideo = new Swiper('.swiper-video', {

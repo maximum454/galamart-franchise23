@@ -4524,6 +4524,10 @@ a:hover {
     display: none;
   }
 
+  .franchise23-reviews {
+    padding: 50px 0 70px;
+  }
+
   .franchise23-reviews__title {
     font-weight: 700;
     font-size: 24px;
@@ -4588,6 +4592,10 @@ a:hover {
     display: none;
   }
 
+  .franchise23-video {
+    padding: 35px 0 70px;
+  }
+
   .franchise23-video__title {
     font-weight: 700;
     font-size: 24px;
@@ -4613,5 +4621,20 @@ a:hover {
   .franchise23-video__date {
     font-size: 14px;
     line-height: 17px;
+  }
+
+  .franchise23-video__all {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .franchise23-video .swiper-slide {
+    padding: 0;
+  }
+
+  .franchise23-video .swiper-button-prev,
+  .franchise23-video .swiper-button-next {
+    display: none;
   }
 }
