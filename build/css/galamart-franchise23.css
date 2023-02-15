@@ -3481,6 +3481,10 @@ a:hover {
   max-width: 176px;
 }
 
+.franchise23-invest__trow-item.zatr .comm {
+  display: none;
+}
+
 .franchise23-invest__trow-item.comm {
   -webkit-box-flex: 1;
       -ms-flex: auto;
@@ -4041,7 +4045,7 @@ a:hover {
   }
 
   .franchise23-invest {
-    padding: 55px 0 72px;
+    padding: 50px 0 0;
   }
 
   .franchise23-invest__title {
@@ -4059,6 +4063,110 @@ a:hover {
     -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
+  }
+
+  .franchise23-invest__subtitle {
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0 0 27px;
+  }
+
+  .franchise23-invest__body {
+    margin-bottom: 0;
+  }
+
+  .franchise23-invest__thead {
+    gap: 3px;
+    margin-bottom: 2px;
+  }
+
+  .franchise23-invest__thead-item {
+    font-size: 16px;
+    line-height: 21px;
+    padding: 7px 10px 9px;
+  }
+
+  .franchise23-invest__thead-item.art {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 165px;
+            flex: 1 0 165px;
+    max-width: 165px;
+  }
+
+  .franchise23-invest__thead-item.zatr {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+    max-width: none;
+  }
+
+  .franchise23-invest__thead-item.comm {
+    display: none;
+  }
+
+  .franchise23-invest__trow {
+    gap: 3px;
+    margin-bottom: 6px;
+  }
+
+  .franchise23-invest__trow:last-of-type .franchise23-invest__trow-item,
+  .franchise23-invest__trow:last-of-type .zatr .comm {
+    color: #252525;
+  }
+
+  .franchise23-invest__trow-item {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    padding: 7px 24px;
+  }
+
+  .franchise23-invest__trow-item.art {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 165px;
+            flex: 1 0 165px;
+    max-width: 165px;
+  }
+
+  .franchise23-invest__trow-item.zatr {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+    max-width: none;
+    padding: 7px 8px;
+  }
+
+  .franchise23-invest__trow-item.zatr .comm {
+    margin-top: 5px;
+    display: block;
+    font-family: "PT Sans";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #B41E8E;
+  }
+
+  .franchise23-invest__trow-item.comm {
+    display: none;
+  }
+
+  .franchise23-invest__footer {
+    margin-top: -6px;
+  }
+
+  .franchise23-invest__footer-item {
+    margin-right: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+  }
+
+  .franchise23-invest__footer-item .text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FDB913;
   }
 
   .franchise23-video__name {
