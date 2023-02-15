@@ -1,0 +1,92 @@
+.franchise23-market{
+  padding: 50px 0 109px;
+  &__title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    background: linear-gradient(102.72deg, #FF7B01 8.98%, #B41E8E 50.66%, #6F2C91 95.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin: 0 0 50px;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: -32px;
+      background-image: url("../img/icons-sprite.svg#star-yellow");
+      background-repeat: no-repeat;
+      width: 22px;
+      height: 28px;
+    }
+  }
+  &__body{
+    display: flex;
+    flex-wrap: wrap;
+    gap:74px 20px;
+  }
+  &__item{
+    flex:1 0 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+  }
+  &__figure{
+    max-width: 200px;
+    margin: 0 auto 20px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  &__name{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    background: linear-gradient(90.06deg, #6F2C91 0%, #B41E8E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .btn{
+    display: block;
+    max-width: fit-content;
+    margin: 70px auto 0;
+  }
+  @include r(767){
+    padding: 65px 0 40px;
+    &__title{
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      padding-top: 40px;
+      margin-bottom: 60px;
+      &:before {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+    }
+    &__body{
+      gap:20px 10px;
+    }
+    &__item{
+      flex:1 0 calc(50% - 10px);
+      max-width: calc(50% - 10px);
+    }
+    &__name{
+      font-size: 16px;
+      line-height: 19px;
+    }
+    .btn{
+      display: block;
+      max-width: 90%;
+      width: 100%;
+      margin: 30px auto 0;
+    }
+  }
+}
