@@ -2055,6 +2055,12 @@ button.swiper-pagination-bullet {
   height: 33px;
 }
 
+.icon-play {
+  background-image: url("../img/icons-sprite.svg#play");
+  width: 42px;
+  height: 29px;
+}
+
 .table {
   width: 100%;
   margin-bottom: 40px;
@@ -2316,7 +2322,7 @@ a:hover {
 
 .swiper-button-prev,
 .swiper-button-next {
-  background-color: #fff;
+  background-color: transparent;
   background-image: url("../img/icons-sprite.svg#arrow-slider");
   background-size: 40px 72px;
   background-repeat: no-repeat;
@@ -3680,6 +3686,54 @@ a:hover {
   padding: 0 40px;
 }
 
+.franchise23-video {
+  background: -o-linear-gradient(308.83deg, rgba(180, 30, 142, 0.1) 13.01%, rgba(253, 185, 19, 0.1) 131.29%);
+  background: linear-gradient(141.17deg, rgba(180, 30, 142, 0.1) 13.01%, rgba(253, 185, 19, 0.1) 131.29%);
+  padding: 26px 0 110px;
+}
+
+.franchise23-video__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  background: -o-linear-gradient(347.28deg, #FF7B01 8.98%, #B41E8E 50.66%, #6F2C91 95.96%);
+  background: linear-gradient(102.72deg, #FF7B01 8.98%, #B41E8E 50.66%, #6F2C91 95.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin: 0 auto 50px;
+  position: relative;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  text-align: center;
+}
+
+.franchise23-video__title:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -32px;
+  background-image: url("../img/icons-sprite.svg#star-yellow");
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 28px;
+}
+
+.franchise23-video__body {
+  padding: 0 0 40px;
+  overflow: hidden;
+  position: relative;
+}
+
+.franchise23-video__item {
+  max-width: 922px;
+  margin: 0 auto;
+}
+
 .franchise23-video__name {
   font-family: "Inter";
   font-style: normal;
@@ -3687,6 +3741,7 @@ a:hover {
   font-size: 20px;
   line-height: 24px;
   color: #252525;
+  margin-top: 20px;
 }
 
 .franchise23-video__date {
@@ -3696,6 +3751,89 @@ a:hover {
   font-size: 16px;
   line-height: 19px;
   color: #B41E8E;
+}
+
+.franchise23-video__all {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-align: center;
+  background-image: url("../img/slide-bg-all.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.franchise23-video__all:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -o-linear-gradient(359.94deg, #B41E8E 0%, #6F2C91 100%);
+  background: linear-gradient(90.06deg, #B41E8E 0%, #6F2C91 100%);
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+}
+
+.franchise23-video__all:hover:before {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.franchise23-video__all span {
+  position: relative;
+  z-index: 1;
+}
+
+.franchise23-video .swiper-slide {
+  padding: 0 40px;
+  position: relative;
+}
+
+.franchise23-video .swiper-slide .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.franchise23-video .swiper-video-thumb .swiper-slide {
+  padding: 0;
+  position: relative;
+  border-radius: 20px;
+  height: auto;
+  overflow: hidden;
+}
+
+.franchise23-video .swiper-video-thumb .swiper-slide .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 @media only screen and (max-width: 1023px) {
@@ -4448,6 +4586,23 @@ a:hover {
   .franchise23-reviews .swiper-button-prev,
   .franchise23-reviews .swiper-button-next {
     display: none;
+  }
+
+  .franchise23-video__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .franchise23-video__title:before {
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
   }
 
   .franchise23-video__name {

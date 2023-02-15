@@ -1,4 +1,42 @@
 .franchise23-video{
+  background: linear-gradient(141.17deg, rgba(180, 30, 142, 0.1) 13.01%, rgba(253, 185, 19, 0.1) 131.29%);
+  padding: 26px 0 110px;
+  &__title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    background: linear-gradient(102.72deg, #FF7B01 8.98%, #B41E8E 50.66%, #6F2C91 95.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin: 0 auto 50px;
+    position: relative;
+    max-width: fit-content;
+    text-align: center;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: -32px;
+      background-image: url("../img/icons-sprite.svg#star-yellow");
+      background-repeat: no-repeat;
+      width: 22px;
+      height: 28px;
+    }
+  }
+  &__body{
+    padding: 0 0 40px;
+    overflow: hidden;
+    position: relative;
+  }
+  &__item{
+    max-width: 922px;
+    margin: 0 auto;
+  }
   &__name{
     font-family: 'Inter';
     font-style: normal;
@@ -6,6 +44,7 @@
     font-size: 20px;
     line-height: 24px;
     color: #252525;
+    margin-top: 20px;
   }
   &__date{
     font-family: 'Inter';
@@ -15,7 +54,84 @@
     line-height: 19px;
     color: #B41E8E;
   }
+  &__all{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    background-image: url("../img/slide-bg-all.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    transition: opacity .3s ease;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: linear-gradient(90.06deg, #B41E8E 0%, #6F2C91 100%);
+      opacity: .9;
+      width: 100%;
+      height: 100%;
+    }
+    &:hover{
+      &:before{
+        opacity: 1;
+        transition: opacity .3s ease;
+      }
+    }
+    span{
+      position: relative;
+      z-index: 1;
+    }
+  }
+  .swiper-slide{
+    padding: 0 40px;
+    position: relative;
+    .icon{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+  .swiper-video-thumb{
+    .swiper-slide{
+      padding: 0;
+      position: relative;
+      border-radius: 20px;
+      height: auto;
+      overflow: hidden;
+      .icon{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+    }
+  }
   @include r(767){
+    &__title{
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      padding-top: 40px;
+      margin-bottom: 30px;
+      &:before {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+    }
     &__name{
       font-size: 14px;
       line-height: 17px;

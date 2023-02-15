@@ -12,3 +12,22 @@ const swiperReviews = new Swiper('.swiper-reviews', {
         prevEl: '.swiper-button-prev',
     },
 })
+const swiperVideoThumb = new Swiper('.swiper-video-thumb', {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    freeMode: true,
+    watchSlidesProgress: true,
+})
+
+const swiperVideo = new Swiper('.swiper-video', {
+    slidesPerView: 1,
+    spaceBetween: 85,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    thumbs: {
+        swiper: swiperVideoThumb,
+    },
+})
+
