@@ -1,0 +1,52 @@
+.franchise23-work{
+  background-image: url("../img/work-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &__body{
+    display: flex;
+    align-items: center;
+    padding: 94px 0;
+    gap: 20px;
+  }
+  &__form{
+    flex: 1 0 30%;
+    max-width: 356px;
+  }
+  &__content{
+    flex: auto;
+    max-width: 450px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+    margin-left: 113px;
+    b{
+      font-weight: 900;
+    }
+  }
+  @include r(767){
+    &__body{
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 70px 0 0;
+    }
+    &__form{
+      flex: 1 0 100%;
+      order: 2;
+    }
+    &__content{
+      order: 1;
+      flex: 1 0 100%;
+      max-width: 356px;
+      font-size: 20px;
+      line-height: 24px;
+      margin: 0 auto 39px;
+      text-align: center;
+    }
+    .feedback{
+      background: transparent;
+    }
+  }
+}
