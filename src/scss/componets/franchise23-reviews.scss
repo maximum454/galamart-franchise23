@@ -1,0 +1,146 @@
+.franchise23-reviews{
+  padding: 50px 0 97px;
+  &__title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    background: linear-gradient(102.72deg, #FF7B01 8.98%, #B41E8E 50.66%, #6F2C91 95.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin: 0 0 82px;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: -32px;
+      background-image: url("../img/icons-sprite.svg#star-yellow");
+      background-repeat: no-repeat;
+      width: 22px;
+      height: 28px;
+    }
+  }
+  &__body{
+    padding: 40px 0 80px;
+    overflow: hidden;
+    position: relative;
+  }
+  &__item{
+    max-width: 922px;
+    margin: 0 auto;
+  }
+  &__top{
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    background: linear-gradient(90.06deg, #6F2C91 0%, #B41E8E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    position: relative;
+    padding-left: 94px;
+  }
+  &__figure{
+    position: absolute;
+    top: -40px;
+    left: -85px;
+    width: 169px;
+    height: 169px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0;
+  }
+  &__name{
+
+  }
+  &__market{}
+  &__bottom{
+    background: linear-gradient(141.17deg, rgba(180, 30, 142, 0.1) 13.01%, rgba(253, 185, 19, 0.1) 131.29%);
+    border-radius: 20px;
+    padding: 80px 10px;
+  }
+  &__anons{
+    max-width: 734px;
+    margin: 0 auto;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #252525;
+  }
+  .swiper-slide{
+    padding: 0 40px;
+  }
+  @include r(1023){
+    &__body{
+      padding: 20px 0 60px;
+    }
+    &__figure{
+      top: -20px;
+      left: -40px;
+      width: 120px;
+      height: 120px;
+    }
+    &__bottom{
+      padding: 40px 10px;
+    }
+  }
+  @include r(767){
+    &__title{
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      padding-top: 40px;
+      margin-bottom: 30px;
+      &:before {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+    }
+    &__body{
+      padding: 40px 0;
+    }
+    &__top{
+      justify-content: center;
+      font-size: 14px;
+      line-height: 17px;
+      padding-left: 0;
+      flex-direction: column;
+      padding-top: 47px;
+    }
+    &__figure{
+      top: -40px;
+      left: 50%;
+      transform: translate(-50%,0);
+      width: 80px;
+      height: 80px;
+    }
+    &__bottom{
+      padding: 100px 10px 40px;
+      margin-top: -100px;
+    }
+    &__anons{
+      font-size: 14px;
+      line-height: 17px;
+    }
+    .swiper-slide{
+      padding: 0;
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+      display: none;
+    }
+  }
+}
