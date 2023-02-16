@@ -1,0 +1,143 @@
+.franchise23-activity{
+  padding: 50px 0 100px;
+  background: linear-gradient(141.17deg, rgba(180, 30, 142, 0.1) 13.01%, rgba(253, 185, 19, 0.1) 131.29%);
+  &__title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    background: linear-gradient(102.72deg, #FF7B01 8.98%, #B41E8E 50.66%, #6F2C91 95.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin: 0 0 32px;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: -32px;
+      background-image: url("../img/icons-sprite.svg#star-yellow");
+      background-repeat: no-repeat;
+      width: 22px;
+      height: 28px;
+    }
+  }
+  &__subtitle{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #252525;
+    max-width: 725px;
+    margin-bottom: 40px;
+  }
+  &__h4{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #252525;
+    margin: 0 0 40px;
+  }
+  &__list{
+    display: flex;
+    gap: 19px;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+    &--col3{
+      .franchise23-activity__figure{
+        margin: 0;
+        flex: 1 0 calc(33.33% - 19px);
+        max-width: calc(33.33% - 19px);
+        img{
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+  &__figure{
+    margin: 0;
+    flex: 1 0 calc(25% - 19px);
+    max-width: calc(25% - 19px);
+    img{
+      border-radius: 20px;
+      display: block;
+      object-fit: cover;
+    }
+
+    figcaption{
+      margin-top: 20px;
+      font-family: 'Inter';
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      background: linear-gradient(90.06deg, #6F2C91 0%, #B41E8E 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+  @include r(767){
+    padding: 35px 0 40px;
+    &__title{
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      padding-top: 40px;
+      margin-bottom: 30px;
+      &:before {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+    }
+    &__subtitle{
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 30px;
+    }
+    &__h4{
+      font-size: 16px;
+      line-height: 19px;
+      margin: 0 0 20px;
+    }
+    &__list{
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 40px;
+      &--col3{
+        .franchise23-activity__figure{
+          flex: 1 0 100%;
+          max-width: 100%;
+        }
+      }
+    }
+    &__figure{
+      margin: 0;
+      flex: 1 0 100%;
+      max-width: 100%;
+      display: flex;
+      align-items: center;
+      img{
+        max-width: 95px;
+        height: 95px;
+      }
+
+      figcaption{
+        margin-top: 0;
+        margin-left: 20px;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+}

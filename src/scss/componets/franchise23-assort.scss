@@ -1,0 +1,81 @@
+.franchise23-assort{
+  &__top{
+    background-image: url("../img/franchise23-requirement-bg.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  &__title{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+    margin: 0 0 17px;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: -32px;
+      background-image: url("../img/icons-sprite.svg#star-white");
+      background-repeat: no-repeat;
+      width: 22px;
+      height: 28px;
+    }
+  }
+  &__body{
+    position: relative;
+  }
+  &__subtitle{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 0 0 54px;
+  }
+  &__content{
+    max-width: 650px;
+    position: relative;
+    padding: 83px 0;
+    p{
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #FFFFFF;
+      margin: 0 0 24px;
+    }
+  }
+  &__figure{
+    margin: 0;
+    width: 663px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 600px;
+    overflow: hidden;
+    img{
+      height: 100%;
+    }
+  }
+  @include r(767){
+    &__title{
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      padding-top: 38px;
+      margin: 0 0 40px;
+      &:before{
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,0);
+        width: 22px;
+        height: 28px;
+      }
+    }
+  }
+}

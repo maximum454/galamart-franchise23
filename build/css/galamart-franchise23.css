@@ -3587,6 +3587,186 @@ a:hover {
           flex: auto;
 }
 
+.franchise23-assort__top {
+  background-image: url("../img/franchise23-requirement-bg.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.franchise23-assort__title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #FFFFFF;
+  margin: 0 0 17px;
+  position: relative;
+}
+
+.franchise23-assort__title:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -32px;
+  background-image: url("../img/icons-sprite.svg#star-white");
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 28px;
+}
+
+.franchise23-assort__body {
+  position: relative;
+}
+
+.franchise23-assort__subtitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin: 0 0 54px;
+}
+
+.franchise23-assort__content {
+  max-width: 650px;
+  position: relative;
+  padding: 83px 0;
+}
+
+.franchise23-assort__content p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin: 0 0 24px;
+}
+
+.franchise23-assort__figure {
+  margin: 0;
+  width: 663px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 600px;
+  overflow: hidden;
+}
+
+.franchise23-assort__figure img {
+  height: 100%;
+}
+
+.franchise23-activity {
+  padding: 50px 0 100px;
+  background: -o-linear-gradient(308.83deg, rgba(180, 30, 142, 0.1) 13.01%, rgba(253, 185, 19, 0.1) 131.29%);
+  background: linear-gradient(141.17deg, rgba(180, 30, 142, 0.1) 13.01%, rgba(253, 185, 19, 0.1) 131.29%);
+}
+
+.franchise23-activity__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  background: -o-linear-gradient(347.28deg, #FF7B01 8.98%, #B41E8E 50.66%, #6F2C91 95.96%);
+  background: linear-gradient(102.72deg, #FF7B01 8.98%, #B41E8E 50.66%, #6F2C91 95.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin: 0 0 32px;
+  position: relative;
+}
+
+.franchise23-activity__title:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -32px;
+  background-image: url("../img/icons-sprite.svg#star-yellow");
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 28px;
+}
+
+.franchise23-activity__subtitle {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #252525;
+  max-width: 725px;
+  margin-bottom: 40px;
+}
+
+.franchise23-activity__h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #252525;
+  margin: 0 0 40px;
+}
+
+.franchise23-activity__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 19px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.franchise23-activity__list:last-of-type {
+  margin-bottom: 0;
+}
+
+.franchise23-activity__list--col3 .franchise23-activity__figure {
+  margin: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(33.33% - 19px);
+          flex: 1 0 calc(33.33% - 19px);
+  max-width: calc(33.33% - 19px);
+}
+
+.franchise23-activity__list--col3 .franchise23-activity__figure img {
+  border-radius: 20px;
+}
+
+.franchise23-activity__figure {
+  margin: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(25% - 19px);
+          flex: 1 0 calc(25% - 19px);
+  max-width: calc(25% - 19px);
+}
+
+.franchise23-activity__figure img {
+  border-radius: 20px;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.franchise23-activity__figure figcaption {
+  margin-top: 20px;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  background: -o-linear-gradient(359.94deg, #6F2C91 0%, #B41E8E 100%);
+  background: linear-gradient(90.06deg, #6F2C91 0%, #B41E8E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
 .franchise23-market {
   padding: 50px 0 109px;
 }
@@ -4640,6 +4820,99 @@ a:hover {
 
   .franchise23-table__trow-item.comm {
     display: none;
+  }
+
+  .franchise23-assort__title {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    padding-top: 38px;
+    margin: 0 0 40px;
+  }
+
+  .franchise23-assort__title:before {
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    width: 22px;
+    height: 28px;
+  }
+
+  .franchise23-activity {
+    padding: 35px 0 40px;
+  }
+
+  .franchise23-activity__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .franchise23-activity__title:before {
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+
+  .franchise23-activity__subtitle {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 30px;
+  }
+
+  .franchise23-activity__h4 {
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0 0 20px;
+  }
+
+  .franchise23-activity__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+
+  .franchise23-activity__list--col3 .franchise23-activity__figure {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    max-width: 100%;
+  }
+
+  .franchise23-activity__figure {
+    margin: 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .franchise23-activity__figure img {
+    max-width: 95px;
+    height: 95px;
+  }
+
+  .franchise23-activity__figure figcaption {
+    margin-top: 0;
+    margin-left: 20px;
+    font-size: 14px;
+    line-height: 17px;
   }
 
   .franchise23-market {
