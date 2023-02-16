@@ -62,6 +62,11 @@
       height: 100%;
     }
   }
+  @include rmin(1430){
+    &__figure{
+      clip-path: polygon(0 1%, 100% 0%, 85% 100%, 0% 100%);
+    }
+  }
   @include r(767){
     &__title{
       font-size: 24px;

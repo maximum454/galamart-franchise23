@@ -65,6 +65,11 @@
     background: linear-gradient(141.17deg, rgba(180, 30, 142, 0.1) 13.01%, rgba(253, 185, 19, 0.1) 131.29%);
     padding: 50px 0;
   }
+  @include rmin(1430){
+    &__figure{
+      clip-path: polygon(0 1%, 100% 0%, 85% 100%, 0% 100%);
+    }
+  }
   @include r(767){
     &__title{
       font-size: 24px;
