@@ -52,7 +52,7 @@
     <header class="header">
     <div class="container">
         <div class="header__body">
-            <div class="header__burger">
+            <div id="menuShow" class="header__burger">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -60,16 +60,17 @@
             <figure class="header__logo">
                 <img class="img-fluid" src="./img/logo-galamart.svg" width="200" height="50" alt="">
             </figure>
-            <ul class="header__menu menu-top">
-                <li class="menu-top__item"><a class="menu-top__link active" href="#today">О нас</a></li>
-                <li class="menu-top__item"><a class="menu-top__link" href="#adventage">Преимущества</a></li>
-                <li class="menu-top__item"><a class="menu-top__link" href="#requirement">Требования</a></li>
-                <li class="menu-top__item"><a class="menu-top__link" href="#opening">Как открыть?</a></li>
-                <li class="menu-top__item"><a class="menu-top__link" href="#invest">Инвестиции</a></li>
-                <li class="menu-top__item"><a class="menu-top__link" href="#reviews">Отзывы</a></li>
-                <li class="menu-top__item"><a class="menu-top__link" href="#contact">Контакты</a></li>
-            </ul>
-
+            <div class="header__menu">
+                <ul class="menu-top">
+                    <li class="menu-top__item"><a class="menu-top__link active" href="#today">О нас</a></li>
+                    <li class="menu-top__item"><a class="menu-top__link" href="#adventage">Преимущества</a></li>
+                    <li class="menu-top__item"><a class="menu-top__link" href="#requirement">Требования</a></li>
+                    <li class="menu-top__item"><a class="menu-top__link" href="#opening">Как открыть?</a></li>
+                    <li class="menu-top__item"><a class="menu-top__link" href="#invest">Инвестиции</a></li>
+                    <li class="menu-top__item"><a class="menu-top__link" href="#reviews">Отзывы</a></li>
+                    <li class="menu-top__item"><a class="menu-top__link" href="#contact">Контакты</a></li>
+                </ul>
+            </div>
             <div id="js-show-phone" class="header__phone"><i class="icon icon-phone"></i></div>
             <a href="tel:88002500025" class="header__alert">
                 <i class="icon icon-phone"></i>
@@ -79,6 +80,24 @@
         </div>
     </div>
 </header>
+
+<div class="menu-mobile">
+    <div id="menuclose" class="menu-mobile__close"></div>
+    <ul class="menu-top">
+        <li class="menu-top__item"><a class="menu-top__link active" href="#today">О нас</a></li>
+        <li class="menu-top__item"><a class="menu-top__link" href="#adventage">Преимущества</a></li>
+        <li class="menu-top__item"><a class="menu-top__link" href="#requirement">Требования</a></li>
+        <li class="menu-top__item"><a class="menu-top__link" href="#opening">Как открыть?</a></li>
+        <li class="menu-top__item"><a class="menu-top__link" href="#invest">Инвестиции</a></li>
+        <li class="menu-top__item"><a class="menu-top__link" href="#reviews">Отзывы</a></li>
+        <li class="menu-top__item"><a class="menu-top__link" href="#contact">Контакты</a></li>
+    </ul>
+    <a href="tel:88002500025" class="header__alert">
+        <i class="icon icon-phone"></i>
+        <span class="phone">8 800 25-000-25</span>
+        <span>(звонок бесплатный)</span>
+    </a>
+</div>
     <main>
         <section id="hero" class="franchise23-hero">
             <div class="container">

@@ -1,0 +1,29 @@
+.menu-mobile{
+  position: absolute;
+  top: 45px;
+  left: -100%;
+  width: 330px;
+  height: calc(100vh - 45px);
+  background-color: #fff;
+  padding: 59px 68px;
+  z-index: 100;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0 20px 0 0;
+  transition: left .3s ease;
+  &.show{
+    left: 0;
+    transition: left .3s ease;
+  }
+  &__close{
+    width: 53px;
+    height: 45px;
+    position: absolute;
+    top: -45px;
+    left: 0;
+    background-color: #ffffff;
+    background-image: url("../img/icons-sprite.svg#menu-close");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

@@ -51,3 +51,20 @@ const showPhone = document.getElementById('js-show-phone')
 showPhone.addEventListener('click', function (){
     document.querySelector('.header__alert').classList.toggle('show')
 })
+
+
+const menuShow = document.getElementById('menuShow')
+
+menuShow.addEventListener('click', function (e){
+    document.querySelector('.menu-mobile').classList.add('show')
+    document.querySelector('.wrp__overlay').classList.add('show')
+    document.body.classList.add('lock')
+})
+
+const menuClose = document.getElementById('menuclose')
+
+menuClose.addEventListener('click', function (e){
+    document.querySelector('.menu-mobile').classList.remove('show')
+    document.querySelector('.wrp__overlay').classList.remove('show')
+    document.body.classList.remove('lock')
+})

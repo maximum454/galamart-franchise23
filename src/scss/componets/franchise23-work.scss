@@ -32,6 +32,11 @@
 
     }
   }
+  @include r(1023){
+    &__content{
+      margin-left: 0;
+    }
+  }
   @include r(767){
     &__body{
       flex-wrap: wrap;
