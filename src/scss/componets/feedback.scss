@@ -38,6 +38,7 @@
     display: block;
   }
   @include r(767){
+    background: transparent;
     &--footer{
       background-image: none;
       padding: 30px 16px 30px;

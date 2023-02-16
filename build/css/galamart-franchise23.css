@@ -2401,7 +2401,7 @@ a:hover {
   background-color: #ffffff;
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 10;
   top: 0;
 }
 
@@ -3356,10 +3356,14 @@ a:hover {
   height: 2px;
 }
 
+.franchise23-requirement-list__ul li:last-of-type {
+  margin-bottom: 0;
+}
+
 .franchise23-opening {
   background: -o-linear-gradient(359.94deg, #6F2C91 0%, #B41E8E 100%);
   background: linear-gradient(90.06deg, #6F2C91 0%, #B41E8E 100%);
-  padding: 60px 0 64px;
+  padding: 46px 0 64px;
 }
 
 .franchise23-opening__title {
@@ -3552,7 +3556,7 @@ a:hover {
 .franchise23-table__thead-item {
   background: -o-linear-gradient(359.94deg, #6F2C91 0%, #B41E8E 100%);
   background: linear-gradient(90.06deg, #6F2C91 0%, #B41E8E 100%);
-  font-family: "Inter";
+  font-family: "PT Sans";
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -3597,7 +3601,7 @@ a:hover {
 
 .franchise23-table__trow-item {
   background: #F8EAFF;
-  font-family: "Inter";
+  font-family: "PT Sans";
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -4304,9 +4308,17 @@ a:hover {
     display: none;
   }
 
+  .feedback {
+    background: transparent;
+  }
+
   .feedback--footer {
     background-image: none;
     padding: 30px 16px 30px;
+  }
+
+  .footer {
+    padding: 37px 0 119px;
   }
 
   .footer__body {
@@ -4316,7 +4328,8 @@ a:hover {
   }
 
   .footer__contact {
-    padding-bottom: 89px;
+    max-width: 265px;
+    padding-bottom: 99px;
   }
 
   .footer__title {
@@ -4335,6 +4348,31 @@ a:hover {
             transform: translate(-50%, 0);
     width: 22px;
     height: 28px;
+  }
+
+  .footer__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .footer__list li {
+    margin-bottom: 45px;
+  }
+
+  .footer__list li a {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .footer__list span {
+    color: #D09EE9;
+  }
+
+  .footer__list span.small {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
   }
 
   .footer__form {
@@ -4356,6 +4394,7 @@ a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 37px 0 3px;
   }
 
   .franchise23-hero__form {
@@ -4416,7 +4455,7 @@ a:hover {
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
-    padding: 53px 0 34px;
+    padding: 51px 0 34px;
   }
 
   .franchise23-today {
@@ -4424,7 +4463,7 @@ a:hover {
   }
 
   .franchise23-today__text {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     max-width: 100%;
   }
 
@@ -4442,7 +4481,7 @@ a:hover {
     position: relative;
     width: calc(100% + 20px);
     padding: 40px 0;
-    margin: 0 -10px 45px;
+    margin: 0 -10px 37px;
   }
 
   .franchise23-today__download:before {
@@ -4472,9 +4511,10 @@ a:hover {
   }
 
   .num-count {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 29px 20px;
   }
 
   .num-count__item {
@@ -4497,7 +4537,7 @@ a:hover {
   }
 
   .franchise23-adventage {
-    padding: 55px 0 77px;
+    padding: 51px 0 77px;
   }
 
   .franchise23-adventage__title {
@@ -4524,6 +4564,8 @@ a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 40px 20px;
+    max-width: 325px;
+    margin: 0 auto;
   }
 
   .franchise23-adventage__item {
@@ -4550,7 +4592,7 @@ a:hover {
   }
 
   .franchise23-economika {
-    padding: 55px 0 72px;
+    padding: 49px 0 68px;
   }
 
   .franchise23-economika__title {
@@ -4608,7 +4650,7 @@ a:hover {
     line-height: 29px;
     text-align: center;
     padding-top: 38px;
-    margin: 0 0 40px;
+    margin: 0 0 57px;
   }
 
   .franchise23-requirement__title:before {
@@ -4619,6 +4661,21 @@ a:hover {
             transform: translate(-50%, 0);
     width: 22px;
     height: 28px;
+  }
+
+  .franchise23-requirement__subtitle {
+    margin: 0 0 29px;
+  }
+
+  .franchise23-requirement__content {
+    max-width: 545px;
+    position: relative;
+    padding: 46px 0 82px;
+  }
+
+  .franchise23-requirement__content p {
+    font-size: 16px;
+    line-height: 19px;
   }
 
   .franchise23-requirement__bottom {
@@ -4652,29 +4709,36 @@ a:hover {
   }
 
   .franchise23-requirement-list__dropdown {
-    margin-top: 47px;
+    margin-top: 22px;
+    margin-left: -5px;
     -webkit-column-count: 1;
        -moz-column-count: 1;
             column-count: 1;
   }
 
   .franchise23-requirement-list__dropdown-item {
-    margin-bottom: 44px;
+    margin-bottom: 39px;
   }
 
   .franchise23-requirement-list__name {
     font-size: 16px;
     line-height: 19px;
+    margin-bottom: 13px;
   }
 
   .franchise23-requirement-list__ul li {
     padding-left: 46px;
     font-size: 16px;
     line-height: 19px;
+    margin-bottom: 16px;
   }
 
   .franchise23-requirement-list__ul li:before {
     top: 9px;
+  }
+
+  .franchise23-opening {
+    padding: 60px 0 135px;
   }
 
   .franchise23-opening__title {
@@ -4682,7 +4746,7 @@ a:hover {
     line-height: 29px;
     text-align: center;
     padding-top: 38px;
-    margin: 0 0 55px;
+    margin: 0 0 34px;
   }
 
   .franchise23-opening__title:before {
@@ -4695,6 +4759,12 @@ a:hover {
     height: 28px;
   }
 
+  .franchise23-opening__body {
+    max-width: 322px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+
   .franchise23-opening__item {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 100%;
@@ -4703,9 +4773,17 @@ a:hover {
     text-align: center;
   }
 
+  .franchise23-opening__item:first-of-type .franchise23-opening__name {
+    padding-top: 0;
+  }
+
+  .franchise23-opening__item:first-of-type .franchise23-opening__name:before {
+    display: none;
+  }
+
   .franchise23-opening__name {
     margin: 0 0 9px;
-    padding-top: 45px;
+    padding-top: 40px;
     position: relative;
   }
 
@@ -4729,7 +4807,7 @@ a:hover {
   }
 
   .franchise23-invest {
-    padding: 50px 0 0;
+    padding: 44px 0 0;
   }
 
   .franchise23-invest__title {
@@ -4738,7 +4816,7 @@ a:hover {
     line-height: 29px;
     text-align: center;
     padding-top: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .franchise23-invest__title:before {
@@ -4753,14 +4831,15 @@ a:hover {
     font-size: 16px;
     line-height: 19px;
     margin: 0 0 27px;
+    text-align: center;
   }
 
   .franchise23-invest__body {
-    margin-bottom: 0;
+    margin: 0 -10px;
   }
 
   .franchise23-invest__footer {
-    margin-top: -6px;
+    margin: -6px -10px 0;
   }
 
   .franchise23-invest__footer-item {
@@ -4848,9 +4927,9 @@ a:hover {
 
   .franchise23-table__thead-item.art {
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 165px;
-            flex: 1 0 165px;
-    max-width: 165px;
+        -ms-flex: 1 0 161px;
+            flex: 1 0 161px;
+    max-width: 161px;
   }
 
   .franchise23-table__thead-item.zatr {
@@ -4878,14 +4957,14 @@ a:hover {
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
-    padding: 7px 24px;
+    padding: 7px 20px;
   }
 
   .franchise23-table__trow-item.art {
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 165px;
-            flex: 1 0 165px;
-    max-width: 165px;
+        -ms-flex: 1 0 161px;
+            flex: 1 0 161px;
+    max-width: 161px;
   }
 
   .franchise23-table__trow-item.zatr {
@@ -4915,7 +4994,7 @@ a:hover {
     line-height: 29px;
     text-align: center;
     padding-top: 38px;
-    margin: 0 0 40px;
+    margin: 0 0 28px;
   }
 
   .franchise23-assort__title:before {
@@ -4928,8 +5007,26 @@ a:hover {
     height: 28px;
   }
 
+  .franchise23-assort__subtitle {
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0 0 54px;
+  }
+
+  .franchise23-assort__content {
+    max-width: 650px;
+    position: relative;
+    padding: 83px 0 59px;
+  }
+
+  .franchise23-assort__content p {
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0 0 19px;
+  }
+
   .franchise23-activity {
-    padding: 35px 0 40px;
+    padding: 29px 0 40px;
   }
 
   .franchise23-activity__title {
@@ -4938,7 +5035,7 @@ a:hover {
     line-height: 29px;
     text-align: center;
     padding-top: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
   }
 
   .franchise23-activity__title:before {
@@ -4958,7 +5055,7 @@ a:hover {
   .franchise23-activity__h4 {
     font-size: 16px;
     line-height: 19px;
-    margin: 0 0 20px;
+    margin: 0 0 20px 20px;
   }
 
   .franchise23-activity__list {
@@ -4967,6 +5064,7 @@ a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 10px;
+    padding: 0 20px;
     margin-bottom: 40px;
   }
 
@@ -5004,7 +5102,7 @@ a:hover {
   }
 
   .franchise23-market {
-    padding: 65px 0 40px;
+    padding: 54px 0 40px;
   }
 
   .franchise23-market__title {
@@ -5033,6 +5131,10 @@ a:hover {
         -ms-flex: 1 0 calc(50% - 10px);
             flex: 1 0 calc(50% - 10px);
     max-width: calc(50% - 10px);
+  }
+
+  .franchise23-market__item:nth-child(n+5) {
+    display: none;
   }
 
   .franchise23-market__name {
@@ -5075,16 +5177,17 @@ a:hover {
     max-width: 356px;
     font-size: 20px;
     line-height: 24px;
-    margin: 0 auto 39px;
+    margin: 0 auto 36px;
     text-align: center;
   }
 
-  .franchise23-work .feedback {
-    background: transparent;
+  .franchise23-work__content b {
+    font-size: 32px;
+    line-height: 39px;
   }
 
   .franchise23-reviews {
-    padding: 105px 0 70px;
+    padding: 99px 0 63px;
   }
 
   .franchise23-reviews__title {
@@ -5105,7 +5208,7 @@ a:hover {
   }
 
   .franchise23-reviews__body {
-    padding: 40px 0;
+    padding: 40px 0 54px;
   }
 
   .franchise23-reviews__top {
@@ -5119,11 +5222,11 @@ a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 47px;
+    padding-top: 55px;
   }
 
   .franchise23-reviews__figure {
-    top: -40px;
+    top: -33px;
     left: 50%;
     -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
@@ -5134,7 +5237,7 @@ a:hover {
 
   .franchise23-reviews__bottom {
     padding: 100px 10px 40px;
-    margin-top: -100px;
+    margin-top: -106px;
   }
 
   .franchise23-reviews__anons {
@@ -5152,7 +5255,7 @@ a:hover {
   }
 
   .franchise23-video {
-    padding: 35px 0 70px;
+    padding: 22px 0 67px;
   }
 
   .franchise23-video__title {
@@ -5161,7 +5264,7 @@ a:hover {
     line-height: 29px;
     text-align: center;
     padding-top: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 23px;
   }
 
   .franchise23-video__title:before {
@@ -5172,20 +5275,32 @@ a:hover {
             transform: translate(-50%, 0);
   }
 
+  .franchise23-video__body {
+    padding: 0 0 29px;
+  }
+
   .franchise23-video__name {
     font-size: 14px;
     line-height: 17px;
+    margin-left: 35px;
+    margin-top: 16px;
+    margin-bottom: 7px;
   }
 
   .franchise23-video__date {
     font-size: 14px;
     line-height: 17px;
+    margin-left: 35px;
   }
 
   .franchise23-video__all {
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
+  }
+
+  .franchise23-video .swiper-video-thumb .swiper-slide {
+    border-radius: 10px;
   }
 
   .franchise23-video .swiper-slide {

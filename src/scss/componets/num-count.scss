@@ -28,7 +28,8 @@
     color: #252525;
   }
   @include r(767){
-    justify-content: space-between;
+    justify-content: center;
+    gap:29px 20px;
     &__item{
       flex: 1 0 calc(50% - 20px);
       max-width: calc(50% - 20px);

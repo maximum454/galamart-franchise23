@@ -71,13 +71,25 @@
       line-height: 29px;
       text-align: center;
       padding-top: 38px;
-      margin: 0 0 40px;
+      margin: 0 0 57px;
       &:before{
         top: 0;
         left: 50%;
         transform: translate(-50%,0);
         width: 22px;
         height: 28px;
+      }
+    }
+    &__subtitle{
+      margin: 0 0 29px;
+    }
+    &__content{
+      max-width: 545px;
+      position: relative;
+      padding: 46px 0 82px;
+      p{
+        font-size: 16px;
+        line-height: 19px;
       }
     }
     &__bottom{

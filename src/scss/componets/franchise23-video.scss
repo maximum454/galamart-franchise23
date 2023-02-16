@@ -119,32 +119,44 @@
     }
   }
   @include r(767){
-    padding: 35px 0 70px;
+    padding: 22px 0 67px;
     &__title{
       font-weight: 700;
       font-size: 24px;
       line-height: 29px;
       text-align: center;
       padding-top: 40px;
-      margin-bottom: 30px;
+      margin-bottom: 23px;
       &:before {
         top: 0;
         left: 50%;
         transform: translate(-50%, 0);
       }
     }
+    &__body{
+      padding: 0 0 29px;
+    }
     &__name{
       font-size: 14px;
       line-height: 17px;
+      margin-left: 35px;
+      margin-top: 16px;
+      margin-bottom: 7px;
     }
     &__date{
       font-size: 14px;
       line-height: 17px;
+      margin-left: 35px;
     }
     &__all{
       font-weight: 400;
       font-size: 14px;
       line-height: 17px;
+    }
+    .swiper-video-thumb{
+      .swiper-slide{
+        border-radius: 10px;
+      }
     }
     .swiper-slide{
       padding: 0;

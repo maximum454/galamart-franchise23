@@ -117,6 +117,9 @@
         width: 20px;
         height: 2px;
       }
+      &:last-of-type{
+        margin-bottom: 0;
+      }
     }
   }
   @include r(767){
@@ -142,21 +145,24 @@
       line-height: 17px;
     }
     &__dropdown{
-      margin-top: 47px;
+      margin-top: 22px;
+      margin-left: -5px;
       column-count: 1;
     }
     &__dropdown-item{
-      margin-bottom: 44px;
+      margin-bottom: 39px;
     }
     &__name{
       font-size: 16px;
       line-height: 19px;
+      margin-bottom: 13px;
     }
     &__ul{
       li{
         padding-left: 46px;
         font-size: 16px;
         line-height: 19px;
+        margin-bottom: 16px;
         &:before{
           top: 9px;
         }

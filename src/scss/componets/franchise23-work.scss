@@ -48,11 +48,15 @@
       max-width: 356px;
       font-size: 20px;
       line-height: 24px;
-      margin: 0 auto 39px;
+      margin: 0 auto 36px;
       text-align: center;
-    }
-    .feedback{
-      background: transparent;
+      b{
+        font-size: 32px;
+        line-height: 39px;
+      }
+      span {
+
+      }
     }
   }
 }

@@ -35,7 +35,7 @@ const swiperVideoThumb = new Swiper('.swiper-video-thumb', {
             slidesPerView: 2,
         },
         425: {
-            slidesPerView: 2.5,
+            slidesPerView: 2.4,
         },
         768: {
             slidesPerView: 3,

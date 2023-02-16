@@ -106,7 +106,7 @@
   @include r(767){
     padding: 23px 0 40px;
     &__text{
-      margin-bottom: 30px;
+      margin-bottom: 35px;
       max-width: 100%;
       p{
         font-size: 16px;
@@ -121,7 +121,7 @@
       position: relative;
       width: calc(100% + 20px);
       padding: 40px 0;
-      margin: 0 -10px 45px;
+      margin: 0 -10px 37px;
       &:before{
        display: none;
       }

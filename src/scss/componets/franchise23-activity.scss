@@ -86,14 +86,14 @@
     }
   }
   @include r(767){
-    padding: 35px 0 40px;
+    padding: 29px 0 40px;
     &__title{
       font-weight: 700;
       font-size: 24px;
       line-height: 29px;
       text-align: center;
       padding-top: 40px;
-      margin-bottom: 30px;
+      margin-bottom: 35px;
       &:before {
         top: 0;
         left: 50%;
@@ -108,11 +108,12 @@
     &__h4{
       font-size: 16px;
       line-height: 19px;
-      margin: 0 0 20px;
+      margin: 0 0 20px 20px;
     }
     &__list{
       flex-direction: column;
       gap: 10px;
+      padding: 0 20px;
       margin-bottom: 40px;
       &--col3{
         .franchise23-activity__figure{

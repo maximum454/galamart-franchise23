@@ -75,11 +75,13 @@
     }
   }
   @include r(767){
+    padding: 37px 0 119px;
     &__body{
       justify-content: center;
     }
     &__contact{
-      padding-bottom: 89px;
+      max-width: 265px;
+      padding-bottom: 99px;
     }
     &__title{
       font-size: 24px;
@@ -93,6 +95,26 @@
         transform: translate(-50%,0);
         width: 22px;
         height: 28px;
+      }
+    }
+    &__list{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li{
+        margin-bottom: 45px;
+        a{
+          font-size: 20px;
+          line-height: 26px;
+        }
+      }
+      span{
+        color: #D09EE9;
+        &.small{
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 21px;
+        }
       }
     }
     &__form{

@@ -59,7 +59,7 @@
     padding: 20px;
   }
   @include r(767){
-    padding: 65px 0 40px;
+    padding: 54px 0 40px;
     &__title{
       font-weight: 700;
       font-size: 24px;
@@ -79,6 +79,9 @@
     &__item{
       flex:1 0 calc(50% - 10px);
       max-width: calc(50% - 10px);
+      &:nth-child(n + 5){
+          display: none;
+      }
     }
     &__name{
       font-size: 16px;
