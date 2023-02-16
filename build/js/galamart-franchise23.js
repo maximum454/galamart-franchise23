@@ -58,3 +58,9 @@ const swiperVideo = new Swiper('.swiper-video', {
     },
 })
 
+
+const showPhone = document.getElementById('js-show-phone')
+
+showPhone.addEventListener('click', function (){
+    document.querySelector('.header__alert').classList.toggle('show')
+})

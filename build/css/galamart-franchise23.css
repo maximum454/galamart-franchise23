@@ -2417,6 +2417,7 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .header__logo {
@@ -2483,6 +2484,38 @@ a:hover {
 
 .header__menu {
   display: block;
+}
+
+.header__alert {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #FFFFFF;
+  max-width: 210px;
+  padding: 24px 6px 14px 54px;
+  border-radius: 0 0 20px 20px;
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #6F2C91;
+}
+
+.header__alert.show {
+  display: block;
+}
+
+.header__alert .phone {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #B41E8E;
+}
+
+.header__alert .icon {
+  position: absolute;
+  top: 32px;
+  left: 20px;
 }
 
 .menu-top {
@@ -4236,6 +4269,38 @@ a:hover {
   }
 
   .header__menu {
+    display: none;
+  }
+
+  .header__alert {
+    display: none;
+    top: calc(100% + 24px);
+    right: 20px;
+    max-width: 225px;
+    padding: 30px 15px;
+    border-radius: 20px 0 20px 20px;
+    -webkit-box-shadow: 0 6px 16px 3px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 6px 16px 3px rgba(0, 0, 0, 0.25);
+    text-align: center;
+  }
+
+  .header__alert:before {
+    content: "";
+    position: absolute;
+    top: -24px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 24px solid #ffffff;
+    border-left: 24px solid transparent;
+  }
+
+  .header__alert .phone {
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .header__alert .icon {
     display: none;
   }
 
