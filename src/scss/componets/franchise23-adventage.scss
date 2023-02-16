@@ -1,13 +1,13 @@
 .franchise23-adventage{
   background: linear-gradient(90.06deg, #6F2C91 0%, #B41E8E 100%);
-  padding: 70px 0 90px;
+  padding: 70px 0 87px;
   &__title{
     font-family: 'Inter';
     font-weight: 700;
     font-size: 36px;
     line-height: 44px;
     color: #FFFFFF;
-    margin: 0 0 80px;
+    margin: 0 0 64px;
     position: relative;
     &:before{
       content: '';
@@ -24,7 +24,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap:50px  20px;
+    gap:47px  20px;
   }
   &__item{
     flex: 1 0 calc(50% - 20px);

@@ -38,12 +38,16 @@
       font-size: 16px;
       line-height: 19px;
       color: #FFFFFF;
-      margin-bottom: 18px;
+      margin-bottom: 10px;
+      margin-left: 15px;
       &:nth-child(2){
-        margin-left: 20px;
+        margin-left: 30px;
       }
       &:nth-child(3){
-        margin-left: 40px;
+        margin-left: 50px;
+      }
+      .icon{
+        margin-right: 17px;
       }
     }
 

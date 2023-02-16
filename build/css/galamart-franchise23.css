@@ -2396,7 +2396,7 @@ a:hover {
 }
 
 .header {
-  padding: 12px 0 19px;
+  padding: 12px 0 15px;
   background-color: #ffffff;
 }
 
@@ -2490,7 +2490,7 @@ a:hover {
 }
 
 .menu-top__item {
-  margin-right: 15px;
+  margin-right: 10px;
   text-align: center;
 }
 
@@ -2555,7 +2555,7 @@ a:hover {
   background: -o-linear-gradient(359.94deg, #6F2C91 0%, #B41E8E 100%);
   background: linear-gradient(90.06deg, #6F2C91 0%, #B41E8E 100%);
   border-radius: 10px;
-  padding: 30px 16px 50px;
+  padding: 30px 16px 40px;
   position: relative;
 }
 
@@ -2601,7 +2601,7 @@ a:hover {
 .footer {
   background: -o-linear-gradient(359.94deg, #6F2C91 0%, #B41E8E 100%);
   background: linear-gradient(90.06deg, #6F2C91 0%, #B41E8E 100%);
-  padding: 87px 0 103px;
+  padding: 87px 0 130px;
 }
 
 .footer__body {
@@ -2628,7 +2628,7 @@ a:hover {
   font-size: 36px;
   line-height: 44px;
   color: #FFFFFF;
-  margin: 0 0 80px;
+  margin: 0 0 76px;
   position: relative;
 }
 
@@ -2650,7 +2650,7 @@ a:hover {
 }
 
 .footer__list li {
-  margin-bottom: 50px;
+  margin-bottom: 46px;
 }
 
 .footer__list li:last-of-type {
@@ -2689,7 +2689,7 @@ a:hover {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 70%;
           flex: 1 0 70%;
-  max-width: 540px;
+  max-width: 545px;
 }
 
 .franchise23-hero {
@@ -2750,15 +2750,20 @@ a:hover {
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
+  margin-left: 15px;
 }
 
 .franchise23-hero__list li:nth-child(2) {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .franchise23-hero__list li:nth-child(3) {
-  margin-left: 40px;
+  margin-left: 50px;
+}
+
+.franchise23-hero__list li .icon {
+  margin-right: 17px;
 }
 
 .franchise23-hero__footer {
@@ -2780,7 +2785,7 @@ a:hover {
 }
 
 .franchise23-today__text {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   max-width: 640px;
 }
 
@@ -2791,7 +2796,7 @@ a:hover {
   font-size: 20px;
   line-height: 24px;
   color: #252525;
-  margin: 0 0 30px;
+  margin: 0 0 38px;
 }
 
 .franchise23-today__text p:last-of-type {
@@ -2902,7 +2907,7 @@ a:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 20px;
+  gap: 49px 20px;
 }
 
 .num-count__item {
@@ -2939,7 +2944,7 @@ a:hover {
 .franchise23-adventage {
   background: -o-linear-gradient(359.94deg, #6F2C91 0%, #B41E8E 100%);
   background: linear-gradient(90.06deg, #6F2C91 0%, #B41E8E 100%);
-  padding: 70px 0 90px;
+  padding: 70px 0 87px;
 }
 
 .franchise23-adventage__title {
@@ -2948,7 +2953,7 @@ a:hover {
   font-size: 36px;
   line-height: 44px;
   color: #FFFFFF;
-  margin: 0 0 80px;
+  margin: 0 0 64px;
   position: relative;
 }
 
@@ -2972,7 +2977,7 @@ a:hover {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 50px 20px;
+  gap: 47px 20px;
 }
 
 .franchise23-adventage__item {
@@ -3005,7 +3010,7 @@ a:hover {
 }
 
 .franchise23-economika {
-  padding: 70px 0 60px;
+  padding: 70px 0 58px;
 }
 
 .franchise23-economika__title {
@@ -3044,7 +3049,7 @@ a:hover {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 50px 20px;
+  gap: 47px 20px;
 }
 
 .franchise23-economika__item {
@@ -3346,14 +3351,14 @@ a:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 20px;
+  gap: 24px;
 }
 
 .franchise23-opening__item {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 calc(20% - 20px);
-          flex: 1 0 calc(20% - 20px);
-  max-width: calc(20% - 20px);
+      -ms-flex: 1 0 calc(20% - 24px);
+          flex: 1 0 calc(20% - 24px);
+  max-width: calc(20% - 24px);
 }
 
 .franchise23-opening__name {
@@ -3382,7 +3387,7 @@ a:hover {
 }
 
 .franchise23-invest {
-  padding: 50px 0 97px;
+  padding: 50px 0 96px;
 }
 
 .franchise23-invest__title {
@@ -3441,7 +3446,7 @@ a:hover {
 }
 
 .franchise23-invest__footer-item {
-  margin-right: 23px;
+  margin-right: 26px;
   font-family: "Inter";
   font-weight: 700;
   font-size: 36px;
@@ -3632,7 +3637,7 @@ a:hover {
 .franchise23-assort__content {
   max-width: 650px;
   position: relative;
-  padding: 83px 0;
+  padding: 83px 0 26px;
 }
 
 .franchise23-assort__content p {
@@ -3660,7 +3665,7 @@ a:hover {
 }
 
 .franchise23-activity {
-  padding: 50px 0 100px;
+  padding: 50px 0 101px;
   background: -o-linear-gradient(308.83deg, rgba(180, 30, 142, 0.1) 13.01%, rgba(253, 185, 19, 0.1) 131.29%);
   background: linear-gradient(141.17deg, rgba(180, 30, 142, 0.1) 13.01%, rgba(253, 185, 19, 0.1) 131.29%);
 }
@@ -3754,7 +3759,7 @@ a:hover {
 }
 
 .franchise23-activity__figure figcaption {
-  margin-top: 20px;
+  margin-top: 23px;
   font-family: "Inter";
   font-weight: 700;
   font-size: 20px;
@@ -3768,7 +3773,7 @@ a:hover {
 }
 
 .franchise23-market {
-  padding: 50px 0 109px;
+  padding: 0 0 108px;
 }
 
 .franchise23-market__title {
@@ -3804,7 +3809,7 @@ a:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 74px 20px;
+  gap: 46px 20px;
 }
 
 .franchise23-market__item {
@@ -3836,11 +3841,11 @@ a:hover {
 }
 
 .franchise23-market .btn {
+  width: 100%;
+  max-width: 356px;
   display: block;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
   margin: 70px auto 0;
+  padding: 20px;
 }
 
 .franchise23-work {
@@ -3857,7 +3862,10 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 94px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 94px 0 101px;
   gap: 20px;
 }
 
@@ -3883,10 +3891,12 @@ a:hover {
 
 .franchise23-work__content b {
   font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
 }
 
 .franchise23-reviews {
-  padding: 50px 0 97px;
+  padding: 80px 0 67px;
 }
 
 .franchise23-reviews__title {
@@ -3901,7 +3911,7 @@ a:hover {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  margin: 0 0 82px;
+  margin: 0 0 42px;
   position: relative;
 }
 
@@ -3917,7 +3927,7 @@ a:hover {
 }
 
 .franchise23-reviews__body {
-  padding: 40px 0 80px;
+  padding: 40px 0 93px;
   overflow: hidden;
   position: relative;
 }
@@ -3954,8 +3964,8 @@ a:hover {
 
 .franchise23-reviews__figure {
   position: absolute;
-  top: -40px;
-  left: -85px;
+  top: -37px;
+  left: -93px;
   width: 169px;
   height: 169px;
   border-radius: 50%;
@@ -3987,7 +3997,7 @@ a:hover {
 .franchise23-video {
   background: -o-linear-gradient(308.83deg, rgba(180, 30, 142, 0.1) 13.01%, rgba(253, 185, 19, 0.1) 131.29%);
   background: linear-gradient(141.17deg, rgba(180, 30, 142, 0.1) 13.01%, rgba(253, 185, 19, 0.1) 131.29%);
-  padding: 26px 0 110px;
+  padding: 26px 0 107px;
 }
 
 .franchise23-video__title {
@@ -4022,7 +4032,7 @@ a:hover {
 }
 
 .franchise23-video__body {
-  padding: 0 0 40px;
+  padding: 0 0 43px;
   overflow: hidden;
   position: relative;
 }

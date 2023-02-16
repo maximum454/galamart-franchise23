@@ -6,7 +6,8 @@
   &__body{
     display: flex;
     align-items: center;
-    padding: 94px 0;
+    justify-content: center;
+    padding: 94px 0 101px;
     gap: 20px;
   }
   &__form{
@@ -24,6 +25,11 @@
     margin-left: 113px;
     b{
       font-weight: 900;
+      font-size: 48px;
+      line-height: 58px;
+    }
+    span {
+
     }
   }
   @include r(767){

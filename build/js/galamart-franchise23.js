@@ -15,7 +15,7 @@
 
 const swiperReviews = new Swiper('.swiper-reviews', {
     slidesPerView: 1,
-    spaceBetween: 85,
+    spaceBetween: 93,
     pagination: {
         el: '.swiper-pagination',
         clickable: true,

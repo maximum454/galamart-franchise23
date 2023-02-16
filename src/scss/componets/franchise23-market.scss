@@ -1,5 +1,5 @@
 .franchise23-market{
-  padding: 50px 0 109px;
+  padding: 0 0 108px;
   &__title{
     font-family: 'Inter';
     font-style: normal;
@@ -27,7 +27,7 @@
   &__body{
     display: flex;
     flex-wrap: wrap;
-    gap:74px 20px;
+    gap:46px 20px;
   }
   &__item{
     flex:1 0 calc(25% - 20px);
@@ -52,9 +52,11 @@
     text-fill-color: transparent;
   }
   .btn{
+    width: 100%;
+    max-width: 356px;
     display: block;
-    max-width: fit-content;
     margin: 70px auto 0;
+    padding: 20px;
   }
   @include r(767){
     padding: 65px 0 40px;
