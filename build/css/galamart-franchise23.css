@@ -2613,7 +2613,7 @@ a:hover {
 }
 
 .menu-mobile {
-  position: absolute;
+  position: fixed;
   top: 45px;
   left: -100%;
   width: 330px;
@@ -2627,6 +2627,16 @@ a:hover {
   -webkit-transition: left 0.3s ease;
   -o-transition: left 0.3s ease;
   transition: left 0.3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .menu-mobile.show {
@@ -2647,6 +2657,44 @@ a:hover {
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.menu-mobile__scroll {
+  overflow: auto;
+}
+
+.menu-mobile__phone {
+  position: relative;
+  background: #FFFFFF;
+  padding: 0 0 0 34px;
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #6F2C91;
+  display: block;
+  text-decoration: none;
+}
+
+.menu-mobile__phone.show {
+  display: block;
+}
+
+.menu-mobile__phone .phone {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #B41E8E;
+  display: block;
+}
+
+.menu-mobile__phone .icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 .feedback {

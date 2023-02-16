@@ -68,3 +68,13 @@ menuClose.addEventListener('click', function (e){
     document.querySelector('.wrp__overlay').classList.remove('show')
     document.body.classList.remove('lock')
 })
+
+const menuItems = document.querySelectorAll('.menu-top__link')
+
+for (let menuItem of menuItems) {
+    menuItem.addEventListener('click', function (){
+        document.querySelector('.menu-mobile').classList.remove('show')
+        document.querySelector('.wrp__overlay').classList.remove('show')
+        document.body.classList.remove('lock')
+    })
+}
