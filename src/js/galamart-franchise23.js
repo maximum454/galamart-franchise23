@@ -78,3 +78,4 @@ for (let menuItem of menuItems) {
         document.body.classList.remove('lock')
     })
 }
+
