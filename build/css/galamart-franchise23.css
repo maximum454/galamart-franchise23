@@ -2264,6 +2264,7 @@ a:hover {
 }
 
 .wrp {
+  padding-top: 80px;
   overflow: hidden;
   position: relative;
 }
@@ -2398,6 +2399,10 @@ a:hover {
 .header {
   padding: 12px 0 15px;
   background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
 }
 
 .header__body {
@@ -4145,6 +4150,10 @@ a:hover {
 }
 
 @media only screen and (max-width: 1023px) {
+  .wrp {
+    padding-top: 104px;
+  }
+
   .header__body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -4196,6 +4205,10 @@ a:hover {
 
   .d-mobile-none {
     display: none !important;
+  }
+
+  .wrp {
+    padding-top: 48px;
   }
 
   .header {

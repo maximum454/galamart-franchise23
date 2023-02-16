@@ -29,6 +29,7 @@ a{
 	}
 }
 .wrp {
+	padding-top: 80px;
 	overflow: hidden;
 	position: relative;
 }
@@ -159,6 +160,17 @@ a{
 		width: 100%;
 		height: 100%;
 		border: 0;
+	}
+}
+
+@include r(1023){
+	.wrp {
+		padding-top: 104px;
+	}
+}
+@include r(767){
+	.wrp {
+		padding-top: 48px;
 	}
 }
 
