@@ -92,5 +92,12 @@ for (let menuItem of menuItems) {
     })
 }
 
+$(function (){
+    $('.js-count-up').counterUp({
+        delay: 10,
+        time: 2000
+    });
+})
+
 
 
