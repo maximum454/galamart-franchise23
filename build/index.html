@@ -177,27 +177,27 @@
 
                     <div class="franchise23-today__num num-count">
                         <div class="num-count__item">
-                            <div class="num-count__top"><span id="digits1" data-digit="500">500</span>+</div>
+                            <div class="num-count__top"><span class="js-count-up" id="digits1" class="odometer" data-value="500">500</span>+</div>
                             <div class="num-count__bottom">прибыльных магазинов</div>
                         </div>
                         <div class="num-count__item">
-                            <div class="num-count__top">100 млн</div>
+                            <div class="num-count__top"><span class="js-count-up" data-value="100">100</span> млн</div>
                             <div class="num-count__bottom">проданных товаров</div>
                         </div>
                         <div class="num-count__item">
-                            <div class="num-count__top">1000+</div>
+                            <div class="num-count__top"><span class="js-count-up" data-value="1000">1000</span>+</div>
                             <div class="num-count__bottom">посетителей в день</div>
                         </div>
                         <div class="num-count__item">
-                            <div class="num-count__top">204+</div>
+                            <div class="num-count__top"><span class="js-count-up" data-value="204">204</span>+</div>
                             <div class="num-count__bottom">городов присутствия</div>
                         </div>
                         <div class="num-count__item">
-                            <div class="num-count__top">75 дней</div>
+                            <div class="num-count__top"><span class="js-count-up" data-value="75">75</span> дней</div>
                             <div class="num-count__bottom">срок открытия магазина</div>
                         </div>
                         <div class="num-count__item">
-                            <div class="num-count__top">50 млн</div>
+                            <div class="num-count__top"><span class="js-count-up" data-value="50">50</span> млн</div>
                             <div class="num-count__bottom">посетителей в год</div>
                         </div>
                     </div>
@@ -408,7 +408,7 @@
 
         <section id="opening" class="franchise23-opening">
             <div class="container">
-                <h2 class="franchise23-opening__title">Открываемся за 75 дней</h2>
+                <h2 class="franchise23-opening__title">Открываемся за <span class="js-count-up">75</span> дней</h2>
                 <div class="franchise23-opening__body">
                     <div class="franchise23-opening__item">
                         <div class="franchise23-opening__name">3 дня</div>
@@ -1014,10 +1014,19 @@
 </div>
 
 <!-- JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
 <script src="js/galamart-franchise23.js"></script>
+
+<script>
+    $(function (){
+        $('.js-count-up').counterUp({
+            delay: 10,
+            time: 2000
+        });
+    })
+</script>
 
 </body>
 
